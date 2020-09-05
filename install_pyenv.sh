@@ -40,7 +40,6 @@ pyenv virtualenv 3.6.4 nexus
 # install poetry
 curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
 
-toilet --metal Attention
 echo ""
 echo "Add the following to your .bashrc"
 echo ""

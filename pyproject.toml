@@ -2,7 +2,7 @@
 name = "nexus_pytorch"
 version = "0.1.0"
 description = "Pytorch implementation of the Nexus Multimodal Generative Model."
-authors = ["Miguel Vasco"]
+authors = ["anonymous"]
 
 [tool.poetry.dependencies]
 pip = "20.2.2"
