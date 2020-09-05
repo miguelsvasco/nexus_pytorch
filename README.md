@@ -6,7 +6,8 @@ Tested on Ubuntu 16.04 LTS, CUDA 10.2:
 
 1. Run ``` ./install_pyenv.sh ``` to install the pyenv environment (requires administrative privilige to install pyenv dependencies)
 2. Activate the pyenv environment ``` pyenv activate nexus ``` (or create a ``` .python-version ``` file);
-3. Install the required dependencies ``` poetry install ```.
+3. Upgrade pip: ``` pip install --upgrade pip```
+4. Install the required dependencies ``` poetry install ```.
 
 ### Troubleshooting:
 - If ``` ./install_pyenv.sh ``` fails on Ubuntu 18.04 LTS, replace in the file all entries refering to Python ```3.6.4``` with ```3.6.9```.

@@ -22,7 +22,7 @@ sacred = "0.7.5"
 pymongo = "^3.0.0"
 tqdm = "4.45.0"
 ipdb = "0.12.3"
-opencv-python = "4.3.0.36"
+opencv-python = "4.3.0.38"
 
 [tool.poetry.dev-dependencies]
 pytest = "^3.0"
