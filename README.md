@@ -44,25 +44,45 @@ After training, place the model ``` *_checkpoint.pth.rar``` in the ``` /trained_
 To generate modality information from symbolic information (labels):
 
 #### Preliminary evaluation
-```
-python generate.py
-```
+CUDA: ```python generate.py```
+ 
+Without CUDA: ```python generate.py with gpu.cuda=False```
+
 #### Multimodal evaluation
+With CUDA:
 ```
 python generate_image.py
 python generate_sound.py
 python generate_trajectory.py
 ```
 
+Without CUDA:
+```
+python generate_image.py with gpu.cuda=False
+python generate_sound.py with gpu.cuda=False
+python generate_trajectory.py with gpu.cuda=False
+```
+
 ### Evaluation
 To evaluate _Coherence_ and _Dissimilarity_:
 
 #### Preliminary evaluation
+
+With CUDA:
 ```
 python evaluate_coherence.py
 python evaluate_dissimilarity.py
 ```
+
+Without CUDA:
+```
+python evaluate_coherence.py with gpu.cuda=False
+python evaluate_dissimilarity.py with gpu.cuda=False
+```
+
 #### Multimodal evaluation
+With CUDA:
+
 ```
 python evaluate_coherence_image.py
 python evaluate_coherence_sound.py
@@ -72,4 +92,15 @@ python evaluate_coherence_symbol.py
 python evaluate_dissimilarity_image.py
 python evaluate_dissimilarity_sound.py
 python evaluate_dissimilarity_trajectory.py
+```
+Without CUDA:
+```
+python evaluate_coherence_image.py with gpu.cuda=False
+python evaluate_coherence_sound.py with gpu.cuda=False
+python evaluate_coherence_trajectory.py with gpu.cuda=False
+python evaluate_coherence_symbol.py with gpu.cuda=False
+
+python evaluate_dissimilarity_image.py with gpu.cuda=False
+python evaluate_dissimilarity_sound.py with gpu.cuda=False
+python evaluate_dissimilarity_trajectory.py with gpu.cuda=False
 ```
