@@ -34,7 +34,7 @@ To train a model without CUDA:
 ```
 python train.py with gpu.cuda=False
 ```
-After training, place the model ``` *_checkpoint.pth.rar``` in the ``` /trained_models``` folder.
+After training, place the model ``` *_checkpoint.pth.rar``` in the ``` /trained_models``` folder. To change the training hyperparameters or the network architecture, please modify the file ``` ingredients.py```.
 
 ### Generation
 To generate modality information from symbolic information (labels):
