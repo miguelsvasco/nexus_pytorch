@@ -1,8 +1,10 @@
 #!/bin/bash
-sudo apt-get update
 
-# install portaudio
-sudo apt-get install -y portaudio19-dev
+# Pyenv Dependencies
+sudo apt-get update
+sudo apt-get install -y build-essential libssl-dev zlib1g-dev libbz2-dev \
+libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+xz-utils tk-dev libffi-dev liblzma-dev python-openssl portaudio19-dev git
 
 # PYENV setup
 echo "$(tput setaf 2)Installing and configuring pyenv$(tput sgr0)"
@@ -43,6 +45,7 @@ curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.p
 echo ""
 echo "Add the following to your .bashrc"
 echo ""
+echo 'export PATH="$HOME/.poetry/bin:$PATH"'
 echo 'export PYENV_ROOT="$HOME/.pyenv"'
 echo 'export PATH="$PYENV_ROOT/bin:$PATH"'
 echo 'eval "$(pyenv init -)"'
