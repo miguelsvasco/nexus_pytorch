@@ -2,6 +2,8 @@
 Pytorch implementation of the Nexus model.
 
 ## Setup/Instalation
+Tested on Ubuntu 16.04 LTS, CUDA 10.2:
+
 1. Run ``` ./install_pyenv.sh ``` to install the pyenv environment;
 2. Activate the pyenv environment ``` pyenv activate nexus ``` (or create a ``` .python-version ``` file);
 3. Install the required dependencies ``` poetry install ```.
