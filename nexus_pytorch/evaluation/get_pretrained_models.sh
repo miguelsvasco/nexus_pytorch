@@ -6,6 +6,9 @@ wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1T-kO
 
 wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=17t02HC1ke4YmRq6WIFB5X1NLgqxwzYai' -O ./autoencoders/trajectory/trained_models/best_trajectory_ae_model.pth.tar
 
+wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1T8cPBeed9djlT9ulSvLyYv4b2lnoivvw' -O ./autoencoders/mnist/trained_models/best_mnist_ae_model.pth.tar
+
+wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1oe8-rPrbTaJermq3d_kiBPhr9wzwGT7g' -O ./autoencoders/fashion/trained_models/best_fashion_ae_model.pth.tar
 
 # Classifiers
 
@@ -14,6 +17,10 @@ wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1_Om2
 wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1iEjmPQrMrWQZNFUw0BDLLHIaxYoIU9g9' -O ./classifiers/sound/trained_models/best_sound_classifier_model.pth.tar
 
 wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1KQK--Xfql9kI6ZMl7G1LkQlL6mzyM-YS' -O ./classifiers/trajectory/trained_models/best_trajectory_classifier_model.pth.tar
+
+wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1XSJCuOrW_UlYqCYJM7IfgVpg4y6qv8jR' -O ./classifiers/mnist/trained_models/best_mnist_classifier_model.pth.tar
+
+wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1TrNhxqHH2FNHjmv02V5p_BNW2QFthqFP' -O ./classifiers/fashion/trained_models/best_fashion_classifier_model.pth.tar
 
 
 # Preliminary
@@ -41,6 +48,33 @@ wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1w6Xa
 
 ### H-MMVAE
 wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1KWhAi2p3kCGhFDjGelIQBEzBz0RNL7-z' -O ./preliminary/hierarchy/h_mmvae/trained_models/h_mmvae_checkpoint.pth.tar
+
+
+# Standard
+
+## MNIST
+
+### Nexus
+wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1fBu4XoFPX9bypWTACRjo0m86h41pCneq' -O ./standard/mnist/nexus/trained_models/nexus_checkpoint.pth.tar
+
+### MVAE
+wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1SAP1Yex8LCHOi6C9VagHLaXI0y6d_CHm' -O ./standard/mnist/mvae/trained_models/mvae_checkpoint.pth.tar
+
+### MMVAE
+wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1oPdK-nPKM1oxIUEd-3wThoJLx5q85K6i' -O ./standard/mnist/mmvae/trained_models/mmvae_checkpoint.pth.tar
+
+
+## Fashion
+
+### Nexus
+wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1bOXsBxbI94crB1tB8E-ftIX8NYbKYdLx' -O ./standard/fashion/nexus/trained_models/nexus_checkpoint.pth.tar
+
+### MVAE
+wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1-SG4OrH4nMTHYWC0ypBVwuFVAujOdTSg' -O ./standard/fashion/mvae/trained_models/mvae_checkpoint.pth.tar
+
+### MMVAE
+wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=14nPFP-7uE4HhY3Ga_QGXrNKE_ZKijrQ9' -O ./standard/fashion/mmvae/trained_models/mmvae_checkpoint.pth.tar
+
 
 
 # Multimodal

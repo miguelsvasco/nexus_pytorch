@@ -1,5 +1,5 @@
-from nexus_pytorch.evaluation.standard.fashion.nexus.model.model_components import *
-import random
+from nexus_pytorch.evaluation.standard.mnist.nexus.model.model_components import *
+
 
 class NexusModel(nn.Module):
     def __init__(self, nx_info, img_info, sym_info, use_cuda=False):
