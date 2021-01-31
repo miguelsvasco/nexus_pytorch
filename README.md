@@ -51,7 +51,7 @@ After training, place the model ``` *_checkpoint.pth.rar``` in the ``` /trained_
 ### Generation
 To generate modality information from symbolic information (labels):
 
-#### Preliminary evaluation
+#### Preliminary evaluation and Standard Evaluation
 CUDA: ```python generate.py```
  
 Without CUDA: ```python generate.py with gpu.cuda=False```
@@ -72,43 +72,43 @@ python generate_trajectory.py with gpu.cuda=False
 ```
 
 ### Evaluation
-To evaluate _Coherence_ and _Dissimilarity_:
+To evaluate _Accuracy_ and _Rank_:
 
-#### Preliminary evaluation
+#### Preliminary evaluation and Standard Evaluation
 
 With CUDA:
 ```
-python evaluate_coherence.py
-python evaluate_dissimilarity.py
+python evaluate_accuracy.py
+python evaluate_rank.py
 ```
 
 Without CUDA:
 ```
-python evaluate_coherence.py with gpu.cuda=False
-python evaluate_dissimilarity.py with gpu.cuda=False
+python evaluate_accuracy.py with gpu.cuda=False
+python evaluate_rank.py with gpu.cuda=False
 ```
 
 #### Multimodal evaluation
 With CUDA:
 
 ```
-python evaluate_coherence_image.py
-python evaluate_coherence_sound.py
-python evaluate_coherence_trajectory.py
-python evaluate_coherence_symbol.py
+python evaluate_accuracy_image.py
+python evaluate_accuracy_sound.py
+python evaluate_accuracy_trajectory.py
+python evaluate_accuracy_symbol.py
 
-python evaluate_dissimilarity_image.py
-python evaluate_dissimilarity_sound.py
-python evaluate_dissimilarity_trajectory.py
+python evaluate_rank_image.py
+python evaluate_rank_sound.py
+python evaluate_rank_trajectory.py
 ```
 Without CUDA:
 ```
-python evaluate_coherence_image.py with gpu.cuda=False
-python evaluate_coherence_sound.py with gpu.cuda=False
-python evaluate_coherence_trajectory.py with gpu.cuda=False
-python evaluate_coherence_symbol.py with gpu.cuda=False
+python evaluate_accuracy_image.py with gpu.cuda=False
+python evaluate_accuracy_sound.py with gpu.cuda=False
+python evaluate_accuracy_trajectory.py with gpu.cuda=False
+python evaluate_accuracy_symbol.py with gpu.cuda=False
 
-python evaluate_dissimilarity_image.py with gpu.cuda=False
-python evaluate_dissimilarity_sound.py with gpu.cuda=False
-python evaluate_dissimilarity_trajectory.py with gpu.cuda=False
+python evaluate_rank_image.py with gpu.cuda=False
+python evaluate_rank_sound.py with gpu.cuda=False
+python evaluate_rank_trajectory.py with gpu.cuda=False
 ```
