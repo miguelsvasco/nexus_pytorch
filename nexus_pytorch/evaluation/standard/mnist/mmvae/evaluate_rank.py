@@ -12,7 +12,7 @@ import nexus_pytorch.evaluation.standard.mnist.mmvae.model.evaluation_utils as e
 from nexus_pytorch.evaluation.autoencoders.mnist.train import MNIST_AE
 
 ex = sacred.Experiment(
-    'mnist_mmvae_evaluate_fid_single',
+    'mnist_mmvae_evaluate_rank',
     ingredients=[
         ingredients.training_ingredient, ingredients.model_ingredient,
         ingredients.model_debug_ingredient, ingredients.gpu_ingredient,
