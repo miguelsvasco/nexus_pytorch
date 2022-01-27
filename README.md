@@ -1,5 +1,18 @@
-# nexus_pytorch
+# Nexus model
 Pytorch implementation of the Nexus model.
+
+## Citation
+```
+@article{vasco2022leveraging,
+  title={Leveraging hierarchy in multimodal generative models for effective cross-modality inference},
+  author={Vasco, Miguel and Yin, Hang and Melo, Francisco S and Paiva, Ana},
+  journal={Neural Networks},
+  volume={146},
+  pages={238--255},
+  year={2022},
+  publisher={Elsevier}
+}
+```
 
 ## Setup/Instalation
 Tested on Ubuntu 16.04 LTS, CUDA 10.2:
