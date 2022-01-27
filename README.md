@@ -1,5 +1,5 @@
 # Nexus model
-Pytorch implementation of the Nexus model.
+Official implementation of the Nexus model.
 
 ## Citation
 ```
